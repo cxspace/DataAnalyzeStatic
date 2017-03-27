@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>学院岗位数据分析 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+    <meta name="author" content="FREEHTML5.CO" />
+
+    <!-- Facebook and Twitter integration -->
+  <meta property="og:title" content=""/>
+  <meta property="og:image" content=""/>
+  <meta property="og:url" content=""/>
+  <meta property="og:site_name" content=""/>
+  <meta property="og:description" content=""/>
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:url" content="" />
+  <meta name="twitter:card" content="" />
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Webfont -->
+  <!--<link href='http://fonts.useso.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>-->
+  <!-- Themify Icons -->
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <!-- Icomoon Icons -->
+  <link rel="stylesheet" href="css/icomoon-icons.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- Easy Responsive Tabs -->
+  <link rel="stylesheet" href="css/easy-responsive-tabs.css">
+  <!-- Theme Style -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="chart_lib/Chart.bundle.js"></script>
+  <script src="chart_lib/samples/utils.js"></script>
+
+  
+  <!-- FOR IE9 below -->
+  <!--[if lte IE 9]>
+  <script src="js/modernizr-2.6.2.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body class="fh5co-outer">
+  <header id="fh5co-header" role="banner">
+    
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header"> 
+            <!-- Mobile Toggle Menu Button -->
+            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+            <a class="navbar-brand" href="index.html">返回主页</a>
+          </div>
+          <div id="fh5co-navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <!--<li><a href="#">数据中心</a></li>-->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+              <li>
+
+
+              </li>
+              <li>&nbsp;&nbsp;</li>
+              <li>&nbsp;&nbsp;</li>
+              <li><button class="btn btn-primary">登录</button></li>
+
+              <!--<li><a href="#" class="btn btn-calltoaction btn-primary">快速注册</a></li>-->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  </header>
+
+
+  <div id="fh5co-page-title" style="background-image: url(images/index_bg.jpg)">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="text">
+        <h1>学院教师岗位数据分析</h1>
+      </div>
+
+    </div>
+  </div>
+
+
+  <main role="main" id="fh5co-main">
+
+	<div class="copyrights">copy right @ <a href="#" >UP-VAMS工作室</a></div>
+    <section class="grid-gallery">
+      <div class="container">
+        
+        <!--<div class="row">-->
+          <!--<div class="col-md-6 col-md-offset-3">-->
+            <!--<h2 class="section-heading">信息工程学院岗位数据分析</h2>-->
+          <!--</div>-->
+        <!--</div>-->
+
+        <div class="row gallery-row">
+          
+          <div class="col-md-6 col-sm-6">
+
+            <h5>计算机系</h5>
+
+
+            <div id="canvas-holder" style="width: 400px;height: 400px">
+              <canvas id="chart-area" />
+            </div>
+
+
+          </div>
+
+          <div class="col-md-6 col-sm-6">
+
+            <h5>电子系</h5>
+
+
+            <div id="canvas-holder1" style="width: 400px;height: 400px">
+              <canvas id="chart-area1" />
+            </div>
+
+
+
+          </div>
+        </div>
+        <br/>
+        <hr/>
+        <br/>
+
+        <!-- Gallery Row -->
+
+        <div class="row gallery-row">
+          <div class="col-md-6 col-sm-6">
+
+
+            <h5>自动化系</h5>
+
+
+            <div id="canvas-holder2" style="width: 400px;height: 400px">
+              <canvas id="chart-area2" />
+            </div>
+
+
+
+          </div>
+		  <div class="col-md-6 col-sm-6">
+
+            <h5>计算中心</h5>
+
+
+            <div id="canvas-holder3" style="width: 400px;height: 400px">
+              <canvas id="chart-area3" />
+            </div>
+
+
+          </div>
+        </div>
+
+        <br/>
+        <hr/>
+        <br/>
+
+        <!-- Gallery Row -->
+
+        <div class="row gallery-row">
+          <div class="col-md-6 col-sm-6">
+
+
+            <h5>电工电子实验中心</h5>
+
+
+            <div id="canvas-holder4" style="width: 400px;height: 400px">
+              <canvas id="chart-area4" />
+            </div>
+
+
+
+          </div>
+          <div class="col-md-6 col-sm-6">
+
+            <h5>科研办</h5>
+
+
+            <div id="canvas-holder5" style="width: 400px;height: 400px">
+              <canvas id="chart-area5" />
+            </div>
+
+
+          </div>
+        </div>
+
+        <br/>
+        <hr/>
+        <br/>
+
+
+        <div class="row gallery-row">
+        <div class="col-md-6 col-sm-6">
+
+
+          <h5>学工办</h5>
+
+
+          <div id="canvas-holder6" style="width: 400px;height: 400px">
+            <canvas id="chart-area6" />
+          </div>
+
+
+
+        </div>
+        <div class="col-md-6 col-sm-6">
+
+          <h5>教学办</h5>
+
+
+          <div id="canvas-holder7" style="width: 400px;height: 400px">
+            <canvas id="chart-area7" />
+          </div>
+
+
+        </div>
+      </div>
+
+        <br/>
+        <hr/>
+        <br/>
+
+
+        <div class="row gallery-row">
+          <div class="col-md-6 col-sm-6">
+
+
+            <h5>党政办</h5>
+
+
+            <div id="canvas-holder8" style="width: 400px;height: 400px">
+              <canvas id="chart-area8" />
+            </div>
+
+
+
+          </div>
+          <div class="col-md-6 col-sm-6">
+
+            <!--<h5>教学办</h5>-->
+
+
+            <!--<div id="canvas-holder9" style="width: 400px;height: 400px">-->
+              <!--<canvas id="chart-area9" />-->
+            <!--</div>-->
+            <!--<h5>人员编织核定及现状</h5>-->
+
+
+            <!--<div id="canvas-holder9" style="width: 400px;height: 400px">-->
+              <!--<canvas id="chart-area9" />-->
+            <!--</div>-->
+
+
+          </div>
+        </div>
+
+
+        <br/>
+        <hr/>
+        <br/>
+
+        <div class="row gallery-row">
+          <div class="col-md-12">
+
+            <h5 style="text-align: center">学院教学岗位数据对比分析</h5>
+
+
+
+            <div id="canvas-holder10">
+              <canvas id="chart-area10" />
+            </div>
+
+          </div>
+        </div>
+
+        <br/>
+        <hr/>
+        <br/>
+
+        <div class="row gallery-row">
+          <div class="col-md-12 col-sm-6">
+
+            <h5 style="text-align: center">人员编织核定及现状</h5>
+
+
+
+            <div id="canvas-holder9">
+              <canvas id="chart-area9" />
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+
+      var config = {
+          type: 'doughnut',
+          data: {
+              datasets: [{
+                  data: [
+                      50,
+                      46,
+                      4
+                  ],
+                  backgroundColor: [
+                      window.chartColors.red,
+                      window.chartColors.orange,
+                      window.chartColors.yellow
+                  ],
+                  label: '人数'
+              }],
+              labels: [
+                  "教职工",
+                  "专任教师（博士16）",
+                  "其他专技"
+              ]
+          },
+          options: {
+              responsive: true,
+              legend: {
+                  position: 'top',
+              },
+              title: {
+                  display: true,
+//                  text: 'Chart.js Doughnut Chart'
+              },
+              animation: {
+                  animateScale: true,
+                  animateRotate: true
+              }
+          }
+      };
+
+
+      var config1 = {
+          type: 'doughnut',
+          data: {
+              datasets: [{
+                  data: [
+                      66,
+                      57,
+                      9
+                  ],
+                  backgroundColor: [
+                      window.chartColors.blue,
+                      window.chartColors.purple,
+                      window.chartColors.green
+                  ],
+                  label: '人数'
+              }],
+              labels: [
+                  "教职工",
+                  "专任教师（博士26）",
+                  "其他专技"
+              ]
+          },
+          options: {
+              responsive: true,
+              legend: {
+                  position: 'top',
+              },
+              title: {
+                  display: true,
+//                  text: 'Chart.js Doughnut Chart'
+              },
+              animation: {
+                  animateScale: true,
+                  animateRotate: true
+              }
+          }
+      };
+
+
+      var config2 = {
+          type: 'doughnut',
+          data: {
+              datasets: [{
+                  data: [
+                      44,
+                      39,
+                      5
+                  ],
+                  backgroundColor: [
+                      window.chartColors.blue,
+                      window.chartColors.purple,
+                      window.chartColors.green
+                  ],
+                  label: '人数'
+              }],
+              labels: [
+                  "教职工",
+                  "专任教师（博士22）",
+                  "其他专技"
+              ]
+          },
+          options: {
+              responsive: true,
+              legend: {
+                  position: 'top',
+              },
+              title: {
+                  display: true,
+//                  text: 'Chart.js Doughnut Chart'
+              },
+              animation: {
+                  animateScale: true,
+                  animateRotate: true
+              }
+          }
+      };
+
+
+      var config3 = {
+          type: 'doughnut',
+          data: {
+              datasets: [{
+                  data: [
+                      50,
+                      39,
+                      9,
+                      1
+
+                  ],
+                  backgroundColor: [
+                      window.chartColors.blue,
+                      window.chartColors.purple,
+                      window.chartColors.green,
+                      window.chartColors.yellow
+                  ],
+                  label: '人数'
+              }],
+              labels: [
+                  "教职工",
+                  "专任教师（博士4）",
+                  "其他专技",
+                  "管理岗"
+              ]
+          },
+          options: {
+              responsive: true,
+              legend: {
+                  position: 'top',
+              },
+              title: {
+                  display: true,
+//                  text: 'Chart.js Doughnut Chart'
+              },
+              animation: {
+                  animateScale: true,
+                  animateRotate: true
+              }
+          }
+      };
+
+
+      var config4 = {
+          type: 'doughnut',
+          data: {
+              datasets: [{
+                  data: [
+                      26,
+                      15,
+                      10,
+                      1
+
+                  ],
+                  backgroundColor: [
+                      window.chartColors.blue,
+                      window.chartColors.purple,
+                      window.chartColors.green,
+                      window.chartColors.yellow
+                  ],
+                  label: '人数'
+              }],
+              labels: [
+                  "教职工",
+                  "专任教师（博士4）",
+                  "其他专技",
+                  "工勤"
+              ]
+          },
+          options: {
+              responsive: true,
+              legend: {
+                  position: 'top',
+              },
+              title: {
+                  display: true,
+//                  text: 'Chart.js Doughnut Chart'
+              },
+              animation: {
+                  animateScale: true,
+                  animateRotate: true
+              }
+          }
+      };
+
+
+      var config5 = {
+          type: 'doughnut',
+          data: {
+              datasets: [{
+                  data: [
+                      1,
+                      1,
+                      2
+
+                  ],
+                  backgroundColor: [
+                      window.chartColors.blue,
+                      window.chartColors.purple,
+                      window.chartColors.green
+                  ],
+                  label: '人数'
+              }],
+              labels: [
+                  "科长",
+                  "管理岗",
+                  "非专技"
+
+              ]
+          },
+          options: {
+              responsive: true,
+              legend: {
+                  position: 'top',
+              },
+              title: {
+                  display: true,
+//                  text: 'Chart.js Doughnut Chart'
+              },
+              animation: {
+                  animateScale: true,
+                  animateRotate: true
+              }
+          }
+      };
+
+
+      var config6 = {
+          type: 'doughnut',
+          data: {
+              datasets: [{
+                  data: [
+                      2,
+                      9
+                  ],
+                  backgroundColor: [
+                      window.chartColors.blue,
+                      window.chartColors.purple,
+                      window.chartColors.green
+                  ],
+                  label: '人数'
+              }],
+              labels: [
+                  "管理岗",
+                  "专职辅导员"
+              ]
+          },
+          options: {
+              responsive: true,
+              legend: {
+                  position: 'top',
+              },
+              title: {
+                  display: true,
+//                  text: 'Chart.js Doughnut Chart'
+              },
+              animation: {
+                  animateScale: true,
+                  animateRotate: true
+              }
+          }
+      };
+
+
+      var config7 = {
+          type: 'doughnut',
+          data: {
+              datasets: [{
+                  data: [
+                      1,
+                      2,
+                      1
+
+                  ],
+                  backgroundColor: [
+                      window.chartColors.blue,
+                      window.chartColors.purple,
+                      window.chartColors.green
+                  ],
+                  label: '人数'
+              }],
+              labels: [
+                  "主任",
+                  "管理岗",
+                  "专职辅导员"
+
+              ]
+          },
+          options: {
+              responsive: true,
+              legend: {
+                  position: 'top',
+              },
+              title: {
+                  display: true,
+//                  text: 'Chart.js Doughnut Chart'
+              },
+              animation: {
+                  animateScale: true,
+                  animateRotate: true
+              }
+          }
+      };
+
+      var config8 = {
+          type: 'doughnut',
+          data: {
+              datasets: [{
+                  data: [
+                      2,
+                      1,
+                      2
+
+                  ],
+                  backgroundColor: [
+                      window.chartColors.blue,
+                      window.chartColors.purple,
+                      window.chartColors.green
+                  ],
+                  label: '人数'
+              }],
+              labels: [
+                  "副主任",
+                  "管理岗",
+                  "其他专技"
+
+              ]
+          },
+          options: {
+              responsive: true,
+              legend: {
+                  position: 'top',
+              },
+              title: {
+                  display: true,
+//                  text: 'Chart.js Doughnut Chart'
+              },
+              animation: {
+                  animateScale: true,
+                  animateRotate: true
+              }
+          }
+      };
+
+
+      var config9 = {
+          type: 'line',
+          data: {
+              labels: ["核定科室及人员", "领导配置", "处级", "科级", "一般管理岗", "教学科研", "其他专技岗位","专职辅导员","工勤","合计编制"],
+              datasets: [{
+                  label: "核定编制",
+                  data: [
+                      21,
+                      9,
+                      4,
+                      7,
+                      6,
+                      215,
+                      21,
+                      10,
+                      0,
+                      263
+                  ],
+                  backgroundColor: window.chartColors.red,
+                  borderColor: window.chartColors.red,
+                  fill: false,
+                  borderDash: [5, 5],
+                  pointRadius: 5,
+                  pointHoverRadius: 10,
+              }, {
+                  label: "人力资源现状",
+                  data: [
+                      19,
+                      9,
+                      4,
+                      4,
+                      8,
+                      196,
+                      40,
+                      9,
+                      1,
+                      262
+
+                  ],
+                  backgroundColor: window.chartColors.blue,
+                  borderColor: window.chartColors.blue,
+                  fill: false,
+                  borderDash: [5, 5],
+                  pointRadius: 5,
+                  pointHoverRadius: 10,
+              }
+
+
+              ]
+          },
+          options: {
+              responsive: true,
+              legend: {
+                  position: 'bottom',
+              },
+              hover: {
+                  mode: 'index'
+              },
+              scales: {
+                  xAxes: [{
+                      display: true,
+                      scaleLabel: {
+                          display: true,
+                          labelString: 'Month'
+                      }
+                  }],
+                  yAxes: [{
+                      display: true,
+                      scaleLabel: {
+                          display: true,
+                          labelString: 'Post'
+                      }
+                  }]
+              },
+              title: {
+                  display: true,
+//                  text: 'Chart.js Line Chart - Different point sizes'
+              }
+          }
+      };
+
+
+//
+      var color = Chart.helpers.color;
+      var horizontalBarChartData = {
+          labels: ["教职工", "专任教师", "其他专技", "管理岗", "工勤"],
+          datasets: [
+         //     1
+              {
+              label: '计算机系',
+              backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
+              borderColor: window.chartColors.purple,
+              borderWidth: 1,
+              data: [
+                  50,
+                  46,
+                  30,
+                  0,
+                  0
+                ]
+              }
+          ,
+//              2
+              {
+              label: '电子系',
+              backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
+              borderColor: window.chartColors.green,
+              data: [
+                  66,
+                  57,
+                  9,
+                  0,
+                  0
+              ]},
+              //              3 color(dsColor).alpha(0.5).rgbString()
+              {
+                  label: '自动化系',
+                  backgroundColor: color(window.chartColors.grey).alpha(0.5).rgbString(),
+                  borderColor: window.chartColors.grey,
+                  data: [
+                      44,
+                      39,
+                      5,
+                      0,
+                      0
+
+             ]},
+
+              //              4
+              {
+                  label: '计算中心',
+                  backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+                  borderColor: window.chartColors.blue,
+                  data: [
+                      50,
+                      39,
+                      9,
+                      1,
+                      0
+
+                  ]},
+
+              //              5
+              {
+                  label: '电工电子实验中心',
+                  backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
+                  borderColor: window.chartColors.orange,
+                  data: [
+                      26,
+                      15,
+                      10,
+                      0,
+                      1
+
+                  ]}
+
+
+                  ]
+
+      };
+
+
+      window.onload = function() {
+
+          var ctx = document.getElementById("chart-area").getContext("2d");
+          var ctx1 = document.getElementById("chart-area1").getContext("2d");
+          var ctx2 = document.getElementById("chart-area2").getContext("2d");
+          var ctx3 = document.getElementById("chart-area3").getContext("2d");
+          var ctx4 = document.getElementById("chart-area4").getContext("2d");
+          var ctx5 = document.getElementById("chart-area5").getContext("2d");
+          var ctx6 = document.getElementById("chart-area6").getContext("2d");
+          var ctx7 = document.getElementById("chart-area7").getContext("2d");
+          var ctx8 = document.getElementById("chart-area8").getContext("2d");
+          var ctx9 = document.getElementById("chart-area9").getContext("2d");
+
+          var ctx10 = document.getElementById("chart-area10").getContext("2d");
+          window.myHorizontalBar = new Chart(ctx10, {
+              type: 'horizontalBar',
+              data: horizontalBarChartData,
+              options: {
+                  // Elements options apply to all of the options unless overridden in a dataset
+                  // In this case, we are setting the border of each horizontal bar to be 2px wide
+                  elements: {
+                      rectangle: {
+                          borderWidth: 1,
+                      }
+                  },
+                  responsive: true,
+                  legend: {
+                      position: 'right',
+                  },
+                  title: {
+                      display: true,
+//                      text: 'Chart.js Horizontal Bar Chart'
+                  }
+              }
+          });
+
+
+          window.myDoughnut = new Chart(ctx, config);
+          window.myDoughnut = new Chart(ctx1, config1);
+          window.myDoughnut = new Chart(ctx2, config2);
+          window.myDoughnut = new Chart(ctx3, config3);
+          window.myDoughnut = new Chart(ctx4, config4);
+          window.myDoughnut = new Chart(ctx5, config5);
+          window.myDoughnut = new Chart(ctx6, config6);
+          window.myDoughnut = new Chart(ctx7, config7);
+          window.myDoughnut = new Chart(ctx8, config8);
+          window.myLine = new Chart(ctx9, config9);
+
+
+      };
+
+
+
+
+  </script>
+
+
+  <footer role="contentinfo" id="fh5co-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-box border-bottom">
+            <h3 class="footer-heading"> 关于我们</h3>
+            <p>
+               我们是信息工程学院教学数据信息开发的团队。
+            </p>
+          </div>
+          
+            <h3 class="footer-heading">订阅</h3>
+            <form action="#" class="form-subscribe">
+              <div class="field">
+                <input type="email" class="form-control" placeholder="hello@mail.com">
+                <button class="btn btn-primary">订阅</button>
+              </div>
+            </form>
+            <div class="fh5co-spacer fh5co-spacer-sm"></div>
+          
+        </div>
+        <div class="col-md-3 col-sm-6">
+          
+            <h3 class="footer-heading">正在开发的项目</h3>
+            <ul class="footer-list">
+              <li><a href="#">项目一</a></li>
+              <li><a href="#">项目二</a></li>
+              <li><a href="#">项目三</a></li>
+            </ul>
+          
+        </div>
+
+
+        <div class="visible-sm clearfix"></div>
+
+
+        <div class="col-md-3 col-sm-6">
+          
+            <h3 class="footer-heading">初步成果</h3>
+            <ul class="footer-list">
+              <li><a href="#"><abbr title="Hypertext Markup Language 5">成果一</abbr></a></li>
+              <li><a href="#"><abbr title="Cascading Stylesheets 3">成果二</abbr></a></li>
+              <li><a href="#">成果三</a></li>
+              <li><a href="#">成果四</a></li>
+            </ul>
+          
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 clearfix">
+
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <div class="footer-box">
+                <h3 class="footer-heading">联系我们</h3>
+                <ul class="footer-list">
+                  <li><a href="#">我们的主页</a></li>
+                  <li><a href="#">给我们留言</a></li>
+                  <li><a href="#">关于我们</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="footer-box">
+                <h3 class="footer-heading">技术支持</h3>
+                <ul class="footer-list">
+                  <li><a href="#">问题</a></li>
+                  <li><a href="#">领域知识</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            <p class="text-center">
+              <a href="#" target="_blank">UP-VAMS</a><br> &copy; 2017 Display. All Rights Reserved.</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Go To Top -->
+    <a href="#" class="fh5co-gotop"><i class="ti-shift-left"></i></a>
+    
+      
+    <!-- jQuery -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Easy Responsive Tabs -->
+    <script src="js/easyResponsiveTabs.js"></script>
+    <!-- FastClick for Mobile/Tablets -->
+    <script src="js/fastclick.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
