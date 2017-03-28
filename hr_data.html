@@ -68,7 +68,6 @@
           </div>
           <div id="fh5co-navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <!--<li><a href="#">数据中心</a></li>-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
 
@@ -79,8 +78,6 @@
               <li>&nbsp;&nbsp;</li>
               <li>&nbsp;&nbsp;</li>
               <li><button class="btn btn-primary">登录</button></li>
-
-              <!--<li><a href="#" class="btn btn-calltoaction btn-primary">快速注册</a></li>-->
             </ul>
           </div>
         </div>
@@ -105,12 +102,6 @@
 	<div class="copyrights">copy right @ <a href="#" >UP-VAMS工作室</a></div>
     <section class="grid-gallery">
       <div class="container">
-        
-        <!--<div class="row">-->
-          <!--<div class="col-md-6 col-md-offset-3">-->
-            <!--<h2 class="section-heading">信息工程学院岗位数据分析</h2>-->
-          <!--</div>-->
-        <!--</div>-->
 
         <div class="row gallery-row">
           
@@ -276,20 +267,6 @@
         <hr/>
         <br/>
 
-        <!--<div class="row gallery-row">-->
-          <!--<div class="col-md-12 col-sm-6">-->
-
-            <!--<h5 style="text-align: center">人员编织核定及现状</h5>-->
-
-
-
-            <!--<div id="canvas-holder9">-->
-              <!--<canvas id="chart-area9" />-->
-            <!--</div>-->
-
-          <!--</div>-->
-        <!--</div>-->
-
 
       </div>
     </section>
@@ -299,7 +276,10 @@
   <script>
 
 
-    <!--专任教师职称结构-->
+//      ==========================================================================================
+
+
+      <!--专任教师职称结构-->
 
       var config = {
           type: 'pie',
@@ -330,7 +310,6 @@
               },
               title: {
                   display: true,
-//                  text: 'Chart.js Doughnut Chart'
               },
               animation: {
                   animateScale: true,
@@ -339,7 +318,9 @@
           }
       };
 
-//专任教师学历结构
+//      ==========================================================================================
+
+     //专任教师学历结构
       var config1 = {
           type: 'pie',
           data: {
@@ -378,7 +359,9 @@
           }
       };
 
-//专任教师年龄结构
+//      ==========================================================================================
+
+    //专任教师年龄结构
       var config2 = {
           type: 'pie',
           data: {
@@ -419,6 +402,9 @@
           }
       };
 
+//      ==========================================================================================
+
+
 //专任教师博士比、硕士比、学士比
       var config3 = {
           type: 'line',
@@ -439,7 +425,11 @@
           }
       };
 
+
+//      ==========================================================================================
+
 //不同年龄段，不同学位人数比例
+
 
     var color = Chart.helpers.color;
 
@@ -523,6 +513,9 @@
         }
     };
 
+//      ==========================================================================================
+
+
     //不同年龄段，不同职称人数比例
 
       var config5 = {
@@ -605,6 +598,7 @@
           }
       };
 
+//      ==========================================================================================
 
     //学院2003年至今人才引进情况
 
@@ -714,47 +708,9 @@
           }
       };
 
-//
-//      var config7 = {
-//          type: 'doughnut',
-//          data: {
-//              datasets: [{
-//                  data: [
-//                      1,
-//                      2,
-//                      1
-//
-//                  ],
-//                  backgroundColor: [
-//                      window.chartColors.blue,
-//                      window.chartColors.purple,
-//                      window.chartColors.green
-//                  ],
-//                  label: '人数'
-//              }],
-//              labels: [
-//                  "主任",
-//                  "管理岗",
-//                  "专职辅导员"
-//
-//              ]
-//          },
-//          options: {
-//              responsive: true,
-//              legend: {
-//                  position: 'top',
-//              },
-//              title: {
-//                  display: true,
-////                  text: 'Chart.js Doughnut Chart'
-//              },
-//              animation: {
-//                  animateScale: true,
-//                  animateRotate: true
-//              }
-//          }
-//      };
+//      ==========================================================================================
 
+// 学院未来9年教师退休情况
       var config8 = {
           type: 'line',
           data: {
@@ -818,7 +774,6 @@
               responsive: true,
               title:{
                   display:true,
-//                  text:'Chart.js Line Chart'
               },
               tooltips: {
                   mode: 'index',
@@ -847,90 +802,10 @@
           }
       };
 
-//
-//      var config9 = {
-//          type: 'line',
-//          data: {
-//              labels: ["核定科室及人员", "领导配置", "处级", "科级", "一般管理岗", "教学科研", "其他专技岗位","专职辅导员","工勤","合计编制"],
-//              datasets: [{
-//                  label: "核定编制",
-//                  data: [
-//                      21,
-//                      9,
-//                      4,
-//                      7,
-//                      6,
-//                      215,
-//                      21,
-//                      10,
-//                      0,
-//                      263
-//                  ],
-//                  backgroundColor: window.chartColors.red,
-//                  borderColor: window.chartColors.red,
-//                  fill: false,
-//                  borderDash: [5, 5],
-//                  pointRadius: 5,
-//                  pointHoverRadius: 10,
-//              }, {
-//                  label: "人力资源现状",
-//                  data: [
-//                      19,
-//                      9,
-//                      4,
-//                      4,
-//                      8,
-//                      196,
-//                      40,
-//                      9,
-//                      1,
-//                      262
-//
-//                  ],
-//                  backgroundColor: window.chartColors.blue,
-//                  borderColor: window.chartColors.blue,
-//                  fill: false,
-//                  borderDash: [5, 5],
-//                  pointRadius: 5,
-//                  pointHoverRadius: 10,
-//              }
-//
-//
-//              ]
-//          },
-//          options: {
-//              responsive: true,
-//              legend: {
-//                  position: 'bottom',
-//              },
-//              hover: {
-//                  mode: 'index'
-//              },
-//              scales: {
-//                  xAxes: [{
-//                      display: true,
-//                      scaleLabel: {
-//                          display: true,
-//                          labelString: 'Month'
-//                      }
-//                  }],
-//                  yAxes: [{
-//                      display: true,
-//                      scaleLabel: {
-//                          display: true,
-//                          labelString: 'Value'
-//                      }
-//                  }]
-//              },
-//              title: {
-//                  display: true,
-////                  text: 'Chart.js Line Chart - Different point sizes'
-//              }
-//          }
-//      };
-
+//      ==========================================================================================
 
 //  学院博士比例现状
+
       var horizontalBarChartData = {
           labels: ["35岁以下", "36-44岁", "45-49岁", "50岁以上"],
           datasets: [
@@ -984,11 +859,10 @@
           var ctx4 = document.getElementById("chart-area4").getContext("2d");
           var ctx5 = document.getElementById("chart-area5").getContext("2d");
           var ctx6 = document.getElementById("chart-area6").getContext("2d");
-//          var ctx7 = document.getElementById("chart-area7").getContext("2d");
           var ctx8 = document.getElementById("chart-area8").getContext("2d");
-//          var ctx9 = document.getElementById("chart-area9").getContext("2d");
-//
           var ctx10 = document.getElementById("chart-area10").getContext("2d");
+
+
           window.myHorizontalBar = new Chart(ctx10, {
               type: 'horizontalBar',
               data: horizontalBarChartData,
@@ -1006,7 +880,6 @@
                   },
                   title: {
                       display: true,
-//                      text: 'Chart.js Horizontal Bar Chart'
                   }
               }
           });
@@ -1019,15 +892,8 @@
           window.myRadar = new Chart(ctx4, config4);
           window.myRadar = new Chart(ctx5, config5);
           window.myLine = new Chart(ctx6, config6);
-//          window.myDoughnut = new Chart(ctx7, config7);
           window.myLine = new Chart(ctx8, config8);
-//          window.myLine = new Chart(ctx9, config9);
-
-
       };
-
-
-
 
   </script>
 

@@ -393,6 +393,37 @@
         <hr/>
         <br/>
 
+        <div class="row gallery-row">
+
+          <div class="col-md-6 col-sm-6">
+
+            <h5 style="text-align: center">2015学院各单位总发表论文(中文核心、ei、sci期刊)</h5>
+
+
+            <div id="canvas-holder18">
+              <canvas id="chart-area18" />
+            </div>
+
+
+          </div>
+
+          <div class="col-md-6 col-sm-6">
+
+            <h5 style="text-align: center">2016学院各单位总发表论文(中文核心、ei、sci期刊)</h5>
+
+
+            <div id="canvas-holder19">
+              <canvas id="chart-area19" />
+            </div>
+
+
+          </div>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
       </div>
     </section>
 
@@ -400,7 +431,9 @@
 
   <script>
 
-    //颜色定义
+      //      ==========================================================================================
+
+      //颜色定义
       var color = Chart.helpers.color;
 
 
@@ -434,7 +467,6 @@
               },
               title: {
                   display: true,
-//                text: 'Chart.js Radar Chart'
               },
               scale: {
                   ticks: {
@@ -444,8 +476,10 @@
           }
       };
 
+      //      ==========================================================================================
 
-//  人均教学工作量
+
+      //  人均教学工作量
 
     var config1 = {
         type: 'radar',
@@ -486,7 +520,10 @@
         }
     };
 
-    //  2015学院不同单位不同年龄段专任教师工作量比例分布
+      //      ==========================================================================================
+
+
+      //  2015学院不同单位不同年龄段专任教师工作量比例分布
     var horizontalBarChartData = {
         labels: ["35岁以下", "36-44岁", "45岁以上"],
         datasets: [
@@ -553,7 +590,10 @@
 
     };
 
-//实验人员工作量分析
+      //      ==========================================================================================
+
+
+      //实验人员工作量分析
     var config3 = {
         type: 'radar',
         data: {
@@ -584,7 +624,6 @@
             },
             title: {
                 display: true,
-//                text: 'Chart.js Radar Chart'
             },
             scale: {
                 ticks: {
@@ -594,6 +633,7 @@
         }
     };
 
+      //      ==========================================================================================
 
     //  人均教学工作量
 
@@ -626,7 +666,6 @@
             },
             title: {
                 display: true,
-//                text: 'Chart.js Radar Chart'
             },
             scale: {
                 ticks: {
@@ -636,6 +675,7 @@
         }
     };
 
+      //      ==========================================================================================
 
     //  学院不同单位不同年龄段实验人员工作量比例分布
     var horizontalBarChartData1 = {
@@ -704,7 +744,9 @@
 
     };
 
-//   2016年各单位专任教师教学工作量统计
+      //      ==========================================================================================
+
+      //   2016年各单位专任教师教学工作量统计
 
     var config6 = {
         type: 'radar',
@@ -736,7 +778,6 @@
             },
             title: {
                 display: true,
-//                text: 'Chart.js Radar Chart'
             },
             scale: {
                 ticks: {
@@ -748,6 +789,7 @@
 
 
     //  人均教学工作量
+      //      ==========================================================================================
 
     var config7 = {
         type: 'radar',
@@ -778,7 +820,6 @@
             },
             title: {
                 display: true,
-//                text: 'Chart.js Radar Chart'
             },
             scale: {
                 ticks: {
@@ -788,7 +829,10 @@
         }
     };
 
-    //2016年各单位专任教师教学工作量统计 8
+      //      ==========================================================================================
+
+
+      //2016年各单位专任教师教学工作量统计 8
     var horizontalBarChartData2 = {
         labels: ["35岁以下", "36-44岁", "45岁以上"],
         datasets: [
@@ -855,7 +899,9 @@
 
     };
 
-    //实验人员工作量分析
+      //      ==========================================================================================
+
+      //实验人员工作量分析
     var config9 = {
         type: 'radar',
         data: {
@@ -886,7 +932,6 @@
             },
             title: {
                 display: true,
-//                text: 'Chart.js Radar Chart'
             },
             scale: {
                 ticks: {
@@ -896,8 +941,10 @@
         }
     };
 
+      //      ==========================================================================================
 
-    //  人均教学工作量
+
+      //  人均教学工作量
 
     var config10 = {
         type: 'radar',
@@ -928,7 +975,6 @@
             },
             title: {
                 display: true,
-//                text: 'Chart.js Radar Chart'
             },
             scale: {
                 ticks: {
@@ -938,7 +984,9 @@
         }
     };
 
-    // 2016 学院不同单位不同年龄段实验人员工作量比例分布
+      //      ==========================================================================================
+
+      // 2016 学院不同单位不同年龄段实验人员工作量比例分布
     var horizontalBarChartData3 = {
         labels: ["35岁以下", "36-44岁", "45岁以上"],
         datasets: [
@@ -1005,8 +1053,10 @@
 
     };
 
+      //      ==========================================================================================
 
-    //2015总科研进账
+
+      //2015总科研进账
     var config12 = {
         type: 'radar',
         data: {
@@ -1047,6 +1097,7 @@
         }
     };
 
+      //      ==========================================================================================
 
     //  平均科研进账
 
@@ -1079,7 +1130,6 @@
             },
             title: {
                 display: true,
-//                text: 'Chart.js Radar Chart'
             },
             scale: {
                 ticks: {
@@ -1089,6 +1139,7 @@
         }
     };
 
+      //      ==========================================================================================
 
     //2016总科研进账
     var config14 = {
@@ -1131,6 +1182,7 @@
         }
     };
 
+      //      ==========================================================================================
 
     //  2016平均科研进账
 
@@ -1173,6 +1225,7 @@
         }
     };
 
+      //      ==========================================================================================
 
     // 2015 学院不同单位不同年龄段教职工科研进账分布
     var horizontalBarChartData4 = {
@@ -1242,6 +1295,7 @@
     };
 
 
+      //      ==========================================================================================
 
     // 2016 学院不同单位不同年龄段教职工科研进账分布
     var horizontalBarChartData5 = {
@@ -1310,6 +1364,95 @@
 
     };
 
+      //      ==========================================================================================
+
+    //2015各学院论文发表总数
+    var config18 = {
+        type: 'radar',
+        data: {
+            labels: ["计算机科学与技术系",  "电子信息工程系", "电气与自动化工程系", "计算中心","电工电子实验中心"],
+            datasets: [
+
+                {
+                    label: "篇",
+                    backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+                    borderColor: window.chartColors.blue,
+                    pointBackgroundColor: window.chartColors.blue,
+                    data: [
+                        26,
+                        57,
+                        70,
+                        9,
+                        7
+
+                    ]
+                }
+
+
+            ]
+        },
+        options: {
+            legend: {
+                position: 'bottom',
+            },
+            title: {
+                display: true,
+            },
+            scale: {
+                ticks: {
+                    beginAtZero: true
+                }
+            }
+        }
+    };
+
+      //      ==========================================================================================
+
+
+      //  2016各学院论文发表总数
+
+    var config19 = {
+        type: 'radar',
+        data: {
+            labels: ["计算机科学与技术系",  "电子信息工程系", "电气与自动化工程系", "计算中心","电工电子实验中心"],
+            datasets: [
+
+                {
+                    label: "篇",
+                    backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+                    borderColor: window.chartColors.blue,
+                    pointBackgroundColor: window.chartColors.blue,
+                    data: [
+                        20,
+                        75,
+                        77,
+                        7,
+                        5
+                    ]
+                }
+
+
+            ]
+        },
+        options: {
+            legend: {
+                position: 'bottom',
+            },
+            title: {
+                display: true,
+            },
+            scale: {
+                ticks: {
+                    beginAtZero: true
+                }
+            }
+        }
+    };
+
+
+
+
+
 
     window.onload = function () {
 
@@ -1340,6 +1483,9 @@
           var ctx16 = document.getElementById("chart-area16").getContext("2d");
           var ctx17 = document.getElementById("chart-area17").getContext("2d");
 
+
+          var ctx18 = document.getElementById("chart-area18").getContext("2d");
+          var ctx19 = document.getElementById("chart-area19").getContext("2d");
 
         window.myHorizontalBar = new Chart(ctx2, {
               type: 'horizontalBar',
@@ -1404,7 +1550,7 @@
             }
         });
 
-//2016年各单位实验人员工作量统计
+        //2016年各单位实验人员工作量统计
         window.myHorizontalBar3 = new Chart(ctx11, {
             type: 'horizontalBar',
             data: horizontalBarChartData3,
@@ -1488,6 +1634,10 @@
                 }
             }
         });
+
+        window.myRadar = new Chart(ctx18,config18);
+        window.myRadar = new Chart(ctx19,config19);
+
 
 
     }
