@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>教师信息编辑</title>
+	<!--[if lt IE 9]>
+
+
+    <script src="../Javascript/Flot/excanvas.js"></script>
+    <![endif]-->
+	<!-- The Fonts -->
+
+	<!-- The Main CSS File -->
+	<link rel="stylesheet" href="../CSS/style.css" />
+	<!-- jQuery -->
+	<script src="../Javascript/jQuery/jquery-1.7.2.min.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="../jquery-easyui/themes/default/easyui.css">
+
+	<link rel="stylesheet" type="text/css" href="../jquery-easyui/themes/icon.css">
+
+	<script type="text/javascript" src="../jquery-easyui/jquery.min.js"></script>
+
+	<script type="text/javascript" src="../jquery-easyui/jquery.easyui.min.js"></script>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+	<!-- Change Pattern -->
+	<div class="changePattern">
+		<span id="pattern1"></span>
+		<span id="pattern2"></span>
+		<span id="pattern3"></span>
+		<span id="pattern4"></span>
+		<span id="pattern5"></span>
+		<span id="pattern6"></span>
+	</div>
+	<!-- Top Panel -->
+	<div class="top_panel">
+		<div class="wrapper">
+			<div class="user">
+				<img src="../Images/user_avatar.png" alt="user_avatar" class="user_avatar" />
+				<span class="label">您好！管理员用户</span>
+				<!-- Top Tooltip -->
+				<div class="top_tooltip">
+					<div>
+						<ul class="user_options">
+
+							<li class="i_16_logout"><a href="Login.html" title="注销"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="top_links">
+				<ul>
+					<li class="i_22_search search_icon">
+						<div class="top_tooltip right_direction">
+							<div>
+								<form class="top_search_form"/>
+									<input type="text" class="top_search_input" />
+									<input type="submit" class="top_search_submit" value="" />
+								</form>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<header class="main_header">
+		<div class="wrapper">
+			<div class="logo">
+				<a href="#" style="text-decoration: none;color: #83888b;font-size: 30px" title="Kanrisha Home">
+					数据专家数据维护系统
+				</a>
+			</div>
+
+		</div>
+	</header>
+
+
+	<div class="wrapper contents_wrapper">
+		
+		<aside class="sidebar">
+			<ul class="tab_nav">
+				<li class="active_tab i_32_dashboard">
+					<a href="../index.html" title="General Info">
+						<span class="tab_label">主面板</span>
+						<span class="tab_info"></span>
+					</a>
+				</li>
+
+				<li class="i_32_tables">
+					<a href="../teacher/listUI.html" title="Some Rows">
+						<span class="tab_label">教师基本信息</span>
+					</a>
+				</li>
+
+				<li class="active_tab i_32_tables">
+					<a href="../teach/selectUI.html" title="Some Rows">
+						<span class="tab_label">本科教学工作量</span>
+					</a>
+				</li>
+
+				<li class="active_tab i_32_tables">
+					<a href="../teachsum/selectUI.html" title="Some Rows">
+						<span class="tab_label">研究生教学工作量</span>
+					</a>
+				</li>
+
+
+
+				<li class="active_tab i_32_tables">
+					<a href="../papers/selectUI.html" title="Some Rows">
+						<span class="tab_label">学术论文</span>
+					</a>
+				</li>
+
+				<li class="active_tab i_32_tables">
+					<a href="../projects/selectUI.html" title="Some Rows">
+						<span class="tab_label">科研项目</span>
+					</a>
+				</li>
+
+
+
+			</ul>
+		</aside>
+
+		<div class="contents">
+			<div class="grid_wrapper">
+
+				<div class="g_6 contents_header">
+					<h3 class="i_16_dashboard tab_label">控制面板</h3>
+					<div><span class="label"></span></div>
+				</div>
+
+				<div class="g_12">
+
+					<div class="easyui-panel" title="编辑" style="width:100%;max-width:400px;padding:30px 60px;">
+						<form id="ff" method="post" action="listUI.html">
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="salaryId" style="width:100%" value="123456" data-options="label:'工资号:',required:true">
+							</div>
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="name" style="width:100%" data-options="label:'姓名:',required:true">
+							</div>
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="gender" style="width:100%" data-options="label:'性别:',required:true">
+							</div>
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="keshi" style="width:100%" data-options="label:'科室:',required:true">
+					        </div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="shengri" style="width:100%" data-options="label:'生日:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="mingzu" style="width:100%" data-options="label:'名族:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="shenfeng" style="width:100%" data-options="label:'身份:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="jiguan" style="width:100%" data-options="label:'籍贯:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="zzmm" style="width:100%" data-options="label:'政治面貌:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="jrsj" style="width:100%" data-options="label:'加入时间:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="rxsj" style="width:100%" data-options="label:'入校时间:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="cjgzsj" style="width:100%" data-options="label:'参加工作时间:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="prgw" style="width:100%" data-options="label:'聘任岗位:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="zgzt" style="width:100%" data-options="label:'在值状态:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="bianzhi" style="width:100%" data-options="label:'编制:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="zgzt" style="width:100%" data-options="label:'在岗状态:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="gzbm" style="width:100%" data-options="label:'工作部门:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="jryy" style="width:100%" data-options="label:'进入原因:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="kqlb" style="width:100%" data-options="label:'考勤类别:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="zhiji" style="width:100%" data-options="label:'职级:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="xzzw" style="width:100%" data-options="label:'行政职务:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="zyjszw" style="width:100%" data-options="label:'专业技术职务:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="tbjl" style="width:100%" data-options="label:'特别经历:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="zhxl" style="width:100%" data-options="label:'最后学历:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="xeuwei" style="width:100%" data-options="label:'学位:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="xwsj" style="width:100%" data-options="label:'学位时间:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="xlgs" style="width:100%" data-options="label:'学历归属:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="lsxk" style="width:100%" data-options="label:'隶属学科:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="beizhu" style="width:100%" data-options="label:'备注:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="dslx" style="width:100%" data-options="label:'导师类型:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="zhuanye" style="width:100%" data-options="label:'专业:',required:true">
+							</div>
+
+							<div style="text-align:center;padding:5px 0">
+								<input type="submit" class="easyui-linkbutton" style="width:80px"/>
+							</div>
+
+
+
+						</form>
+
+					</div>
+
+
+				</div>
+
+				<!-- Separator -->
+				<div class="g_12 separator"><span></span></div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		<div class="wrapper">
+			<span class="copyright">
+				&copy; Copyright &copy; 2017.南昌大学信息工程学院 All rights reserved.
+			</span>
+		</div>
+	</footer>
+</body>
+</html>
